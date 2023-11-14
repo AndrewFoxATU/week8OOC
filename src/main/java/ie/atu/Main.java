@@ -6,7 +6,7 @@ public class Main {
         Scanner myscan = new Scanner(System.in);
 
             String input = myscan.nextLine();
-
+        try {
             int myNum = Integer.parseInt(input);
 
             if (myNum >= 0 && myNum <= 9){
@@ -15,5 +15,10 @@ public class Main {
             else{
                 System.out.println("Not a valid number");
             }
+        }
+        catch(NumberFormatException e){
+            System.out.println("Not a valid character");
+        }
+
     }
 }
