@@ -7,7 +7,7 @@ public class Main {
 
             String input = myscan.nextLine();
 
-            int myNum = Integar.parseInt(input);
+            int myNum = Integer.parseInt(input);
 
             if (myNum >= 0 && myNum <= 9){
                 System.out.println("You entered " + myNum);
